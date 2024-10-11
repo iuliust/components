@@ -184,7 +184,7 @@ export class ListKeyManager<T extends ListKeyManagerOption> {
    * Configures the key manager to activate every 10th, configured or first/last element in up/down direction
    * respectively when the Page-Up or Page-Down key is pressed.
    * @param enabled Whether pressing the Page-Up or Page-Down key activates the first/last item.
-   * @param delta Whether pressing the Home or End key activates the first/last item.
+   * @param delta How many items should be skipped when the user presses the Arrow-Up or Arrow-Down key.
    */
   withPageUpDown(enabled: boolean = true, delta: number = 10): this {
     this._pageUpAndDown = {enabled, delta};
